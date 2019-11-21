@@ -9,7 +9,6 @@ function readFile(dirPath) {
           // console.log(path.join(dirPath, filename));
           require("" + path.join(dirPath, filename));
         } else {
-          times = times + 1;
           // console.log('dir: ' + path.resolve(dirPath, filename));
           readFile(path.join(dirPath, filename));
         }
